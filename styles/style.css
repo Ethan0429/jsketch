@@ -38,3 +38,7 @@ body {
   min-height: 88px;
   border: 1px solid red;
 }
+
+.cell:hover {
+  backdrop-filter: brightness(95%);
+}
