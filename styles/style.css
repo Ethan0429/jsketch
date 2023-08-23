@@ -18,10 +18,36 @@ body {
   color: white;
   display: flex;
   flex-direction: row;
-  justify-content: center;
+  justify-content: space-between;
+  align-items: center;
   padding: 20px;
-  width: 100%;
   background: rgb(32, 32, 54);
+  width: 100%;
+}
+
+#header-logo {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  text-align: center;
+}
+
+#logo {
+  width: 3rem;
+}
+
+#grid-settings {
+  width: 3rem;
+  margin: 0 0 0 1rem;
+  transition: transform 0.4s ease-in-out;
+}
+
+#grid-settings:hover {
+  cursor: pointer;
+  transform: rotate(60deg);
+  transition: transform 0.4s ease-in-out;
 }
 
 #grid {
@@ -36,9 +62,9 @@ body {
 .cell {
   min-width: 88px;
   min-height: 88px;
-  border: 1px solid red;
+  /* border: 1px solid red; */
 }
 
 .cell:hover {
-  backdrop-filter: brightness(95%);
+  backdrop-filter: brightness(92%);
 }
